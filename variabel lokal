@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int contohFunction()
+{
+	int a = 10;
+	return a;
+	//variable dihancurkan /dihapus dari alamat memori
+}
+
+int contohFunction2()
+{
+	int b = 30;
+	return b;
+	//variable dihancurkan /dihapus dari alamat memori
+}
+int main ()
+{
+	int a = 5;
+	cout << "ini variabel lokal dari fungsi utama " << a << endl;
+	cout << "ini variable lokal dari fungsi contohFunction " <<contohFunction();
+	cout << endl;
+	int b = 15;
+	cout << "variabel lokal dari fungsi kedua " << b << endl;
+	cout << "ini variable lokal dari fungsi contohFunction2 " <<contohFunction2();
+	cout << endl;
+}
